@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+  --font-family-merriweather: "Merriweather Sans", sans-serif;
+  --font-family-sigmar: "Sigmar One", cursive;
+}
+
+/* Base styles for html and body */
+html {
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
