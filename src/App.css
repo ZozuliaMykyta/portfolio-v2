@@ -27,3 +27,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
+
+.header-container {
+  max-width: 1158px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 15px 0 15px;
+}
+.container {
+  max-width: 1542px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
