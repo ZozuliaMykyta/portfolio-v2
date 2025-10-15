@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <Header />
-      <Info />
-      <main></main>
+      <div className="container flex justify-between items-center !mt-10">
+        <Info />
+        <main></main>
+      </div>
     </>
   );
 }
