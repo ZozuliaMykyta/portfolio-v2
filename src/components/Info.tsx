@@ -46,7 +46,10 @@ const Info: React.FC = () => {
             key={index}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[24px] border-[1px] border-solid p-1.5 rounded-[5px]"
+            className="text-[24px] border-[1px] border-solid p-1.5 rounded-[5px] 
+                       transition-all duration-300 ease-in-out
+                       hover:scale-110 hover:-translate-y-1
+                       active:scale-95 active:translate-y-0"
             style={{ color: icon.color, borderColor: icon.color }}
           >
             {icon.component}
