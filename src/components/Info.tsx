@@ -29,7 +29,7 @@ const Info: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center text-center text-ash-rose font-family-inter bg-black px-[42px] py-9 border-[3px] border-solid border-custom-brown rounded-[13px]">
+    <div className="flex flex-col justify-center items-center text-center text-ash-rose font-family-inter px-[42px] py-9 dark-bg">
       <img
         src={personalPhoto}
         alt="personal photo"
