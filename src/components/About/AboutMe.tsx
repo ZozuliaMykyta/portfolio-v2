@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
   return (
     <div className="dark-bg pt-7 pb-10 px-11">
       <h2 className="text-white text-[28px] font-bold mb-2.5">About</h2>
-      <p className="text-white">
+      <p className="text-white text-[16px]">
         I'm Mykyta — a Full-Stack MERN developer with almost 4 years of
         experience. I started with frontend and, driven by a desire to bring my
         own ideas to life on the web, I expanded into backend technologies to
