@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/About/AboutMe";
 import Header from "./components/Header";
 import Info from "./components/Info";
+import SectionNav from "./components/Navigation/SectionNav";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <main>
           <AboutMe />
         </main>
+        <SectionNav />
       </div>
     </>
   );
