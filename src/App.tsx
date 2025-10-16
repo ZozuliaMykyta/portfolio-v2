@@ -1,4 +1,5 @@
 import "./App.css";
+import AboutMe from "./components/About/AboutMe";
 import Header from "./components/Header";
 import Info from "./components/Info";
 
@@ -8,7 +9,9 @@ function App() {
       <Header />
       <div className="container flex justify-between items-center !mt-15">
         <Info />
-        <main></main>
+        <main>
+          <AboutMe />
+        </main>
       </div>
     </>
   );
