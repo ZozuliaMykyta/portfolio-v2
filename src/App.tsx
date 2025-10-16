@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="container flex justify-between items-center !mt-15">
+      <div className="container flex justify-between items-center !mt-15 gap-12">
         <Info />
         <main>
           <AboutMe />
