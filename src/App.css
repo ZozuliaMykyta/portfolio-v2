@@ -41,10 +41,10 @@ body {
 }
 
 .container {
-  max-width: 1542px;
+  max-width: 1552px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .dark-bg {
   background-color: black;
