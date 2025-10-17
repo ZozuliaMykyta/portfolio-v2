@@ -29,7 +29,7 @@ const Info: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center text-center text-ash-rose font-family-inter px-[42px] py-9 dark-bg">
+    <div className="flex flex-col justify-center items-center text-center text-ash-rose font-family-inter px-8 py-7 dark-bg">
       <img
         src={personalPhoto}
         alt="personal photo"
@@ -57,15 +57,15 @@ const Info: React.FC = () => {
         ))}
       </div>
       <div className="mt-10 p-5 rounded-xl bg-[#3B3729]">
-        <ul className="text-[15px] font-medium flex flex-col justify-center items-start gap-5">
-          <div className="flex justify-between items-center gap-6 border-b border-b-[rgba(0,0,0,0.10)] pb-5">
-            <div className="p-2.5 bg-black rounded-[4px]">
+        <ul className="text-[13px] font-medium flex flex-col justify-center items-start gap-5">
+          <div className="flex justify-between items-center gap-4 border-b border-b-[rgba(0,0,0,0.10)] pb-5">
+            <div className="p-2 bg-black rounded-[4px]">
               <MdEmail className="text-[20px]" />
             </div>
             <li>{data.gmail}</li>
           </div>
           <div className="flex justify-between items-center gap-6">
-            <div className="p-2.5 bg-black rounded-[4px]">
+            <div className="p-2 bg-black rounded-[4px]">
               <FaLocationDot className="text-[20px]" />
             </div>
             <li>{data.location}</li>
