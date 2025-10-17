@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <div className="dark-bg pt-7 pb-10 px-11">
+    <div className="dark-bg pt-5 pb-8 px-9">
       <h2 className="text-white text-[28px] font-bold mb-2.5">About</h2>
       <p className="text-white text-[16px]">
         I'm Mykyta — a Full-Stack MERN developer with almost 4 years of
@@ -38,10 +38,10 @@ const AboutMe: React.FC = () => {
         {whatIDo.map((item, index) => (
           <div
             key={index}
-            className="flex items-start justify-between gap-3.5 rounded-[9px] border-[3px] border-solid border-[#625839] bg-[#60594B] pr-3.5"
+            className="flex items-start justify-between gap-3.5 rounded-[9px] border-[3px] border-solid border-[#625839] bg-[#60594B] pr-3.5 min-w-[388px]"
           >
             <img src={item.img} alt={item.title} />
-            <div>
+            <div className="pb-1.5">
               <h4 className="mt-4 text-white text-[16px] font-family-inter font-bold">
                 {item.title}
               </h4>
