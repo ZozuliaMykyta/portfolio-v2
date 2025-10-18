@@ -44,7 +44,7 @@ body {
   max-width: 1552px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 30px 20px;
 }
 .dark-bg {
   background-color: black;
