@@ -6,6 +6,7 @@ import Experience from "./components/Experience/experience";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import SectionNav from "./components/Navigation/SectionNav";
+import ProjectsList from "./components/Projects/ProjectsList";
 
 function App() {
   const { currentSection } = useSectionContext();
@@ -22,6 +23,9 @@ function App() {
             mode={currentSection === "experience" ? "visible" : "hidden"}
           >
             <Experience />
+          </Activity>
+          <Activity mode={currentSection === "projects" ? "visible" : "hidden"}>
+            <ProjectsList />
           </Activity>
         </main>
         <SectionNav />
