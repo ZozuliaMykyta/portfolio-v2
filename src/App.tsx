@@ -1,3 +1,4 @@
+import { Activity } from "react";
 import "./App.css";
 import AboutMe from "./components/About/AboutMe";
 import { useSectionContext } from "./components/contexts/SectionContext";
@@ -14,8 +15,14 @@ function App() {
       <div className="container flex justify-between items-center !mt-15 gap-8">
         <Info />
         <main>
-          {currentSection === "about" && <AboutMe />}
-          {currentSection === "experience" && <Experience />}
+          <Activity mode={currentSection === "about" ? "visible" : "hidden"}>
+            <AboutMe />
+          </Activity>
+          <Activity
+            mode={currentSection === "experience" ? "visible" : "hidden"}
+          >
+            <Experience />
+          </Activity>
         </main>
         <SectionNav />
       </div>
