@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutMe from "./components/About/AboutMe";
 import { useSectionContext } from "./components/contexts/SectionContext";
+import Experience from "./components/Experience/experience";
 import Header from "./components/Header";
 import Info from "./components/Info";
 import SectionNav from "./components/Navigation/SectionNav";
@@ -14,7 +15,7 @@ function App() {
         <Info />
         <main>
           {currentSection === "about" && <AboutMe />}
-          {currentSection === "experience" && <div>Experience Section</div>}
+          {currentSection === "experience" && <Experience />}
         </main>
         <SectionNav />
       </div>
