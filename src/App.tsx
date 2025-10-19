@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Info from "./components/Info";
 import SectionNav from "./components/Navigation/SectionNav";
 import ProjectsList from "./components/Projects/ProjectsList";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const { currentSection } = useSectionContext();
@@ -26,6 +27,9 @@ function App() {
           </Activity>
           <Activity mode={currentSection === "projects" ? "visible" : "hidden"}>
             <ProjectsList />
+          </Activity>
+          <Activity mode={currentSection === "skills" ? "visible" : "hidden"}>
+            <Skills />
           </Activity>
         </main>
         <SectionNav />
