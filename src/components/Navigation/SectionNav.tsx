@@ -21,20 +21,22 @@ const SectionNav: React.FC = () => {
   };
 
   return (
-    <div className="py-8 px-7 flex flex-col justify-between items-center gap-6 dark-bg">
+    <div className="2xl:py-8 py-4 2xl:px-7 px-4 flex 2xl:flex-col flex-row 2xl:justify-between justify-center items-center 2xl:gap-6 gap-2 dark-bg 2xl:w-auto w-auto mx-auto flex-wrap">
       {sections.map((section, index) => {
         const isActive = currentSection === section.label.toLowerCase();
 
         return (
           <button
             key={index}
-            className={`bg-[#3B3729] rounded-[6px] w-[76px] py-2.5 flex flex-col justify-center items-center gap-[3px] cursor-pointer ${
+            className={`bg-[#3B3729] rounded-[6px] w-[90px] md:w-[116px] 2xl:w-[76px] 2xl:py-2.5 py-3 flex flex-col justify-center items-center 2xl:gap-[3px] gap-1 cursor-pointer flex-shrink-0 ${
               isActive ? "bg-[#B7A261]" : ""
             }`}
             onClick={() => handleSectionClick(section.label)}
           >
-            <div className="text-[24px]">{section.icon}</div>
-            <h6 className="text-black text-[12px] font-bold">
+            <div className="text-[20px] md:text-4xl 2xl:text-[24px]">
+              {section.icon}
+            </div>
+            <h6 className="text-black text-[13px] md:text-[18px] 2xl:text-[12px] font-bold text-center">
               {section.label}
             </h6>
           </button>
