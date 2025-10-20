@@ -24,9 +24,11 @@ const Skills: React.FC = () => {
     { name: "GitHub", icon: github },
   ];
   return (
-    <div className="dark-bg pt-5 pb-8 px-9">
-      <h2 className="text-[28px] font-bold text-white">Skills</h2>
-      <div className="flex justify-center items-center gap-7 flex-wrap text-center mt-8">
+    <div className="dark-bg pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-8">
+      <h2 className="text-[28px] sm:text-[30px] md:text-[32px] 2xl:text-[28px] font-bold text-white">
+        Skills
+      </h2>
+      <div className="flex justify-center items-center gap-4 sm:gap-5 md:gap-6 2xl:gap-7 flex-wrap text-center mt-6 sm:mt-7 md:mt-8">
         {skillsList.map((skill, index) => (
           <div
             className="flex flex-col justify-center items-center"
@@ -34,12 +36,16 @@ const Skills: React.FC = () => {
           >
             <div
               key={skill.name}
-              className="border-[1px] border-solid border-custom-brown rounded-[8px] p-2.5 bg-white"
+              className="border-[1px] border-solid border-custom-brown rounded-[8px] p-2 sm:p-2.5 md:p-3 2xl:p-2.5 bg-white"
               style={{ boxShadow: "0 0 5.5px 1px #EFE0B2" }}
             >
-              <img src={skill.icon} alt={skill.name} className="w-[60px]" />
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-[48px] sm:w-[52px] md:w-[56px] 2xl:w-[60px]"
+              />
             </div>
-            <h6 className="mt-1.5 text-[19px] font-medium text-white">
+            <h6 className="mt-1.5 text-[16px] sm:text-[17px] md:text-[18px] 2xl:text-[19px] font-medium text-white">
               {skill.name}
             </h6>
           </div>
