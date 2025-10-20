@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
           <div className="flex flex-col justify-center items-center">
             <div
               key={skill.name}
-              className={`border-[1px] border-solid border-custom-brown rounded-[8px] p-2.5 bg-gray-300`}
+              className="border-[1px] border-solid border-custom-brown rounded-[8px] p-2.5 bg-white"
               style={{ boxShadow: "0 0 5.5px 1px #EFE0B2" }}
             >
               <img src={skill.icon} alt={skill.name} className="w-[60px]" />
