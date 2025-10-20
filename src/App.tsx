@@ -1,4 +1,4 @@
-import { Activity } from "react";
+import { Activity, useEffect, useState } from "react";
 import "./App.css";
 import AboutMe from "./components/About/AboutMe";
 import { useSectionContext } from "./components/contexts/SectionContext";
@@ -12,11 +12,29 @@ import ContactMe from "./components/contact/ContactMe";
 
 function App() {
   const { currentSection } = useSectionContext();
+  const [isWide, setIsWide] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWide(window.innerWidth > 1450);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Header />
-      <div className="container flex justify-between items-center !mt-15 gap-8">
+      <div className="container flex 2xl:flex-row flex-col justify-between items-center !mt-15 gap-8">
         <Info />
+        <Activity mode={!isWide ? "visible" : "hidden"}>
+          <SectionNav />
+        </Activity>
         <main>
           <Activity mode={currentSection === "about" ? "visible" : "hidden"}>
             <AboutMe />
@@ -36,7 +54,9 @@ function App() {
             <ContactMe />
           </Activity>
         </main>
-        <SectionNav />
+        <Activity mode={isWide ? "visible" : "hidden"}>
+          <SectionNav />
+        </Activity>
       </div>
     </>
   );
