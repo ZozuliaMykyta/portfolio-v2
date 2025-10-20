@@ -12,6 +12,8 @@
   /* colors */
   --color-ash-rose: #ccc0c0;
   --color-custom-brown: #4b3d10;
+  /* custom breakpoint */
+  --breakpoint-2xl: 90.625rem; /* 1450px */
 }
 
 /* Base styles for html and body */
