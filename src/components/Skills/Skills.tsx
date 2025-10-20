@@ -27,8 +27,11 @@ const Skills: React.FC = () => {
     <div className="dark-bg pt-5 pb-8 px-9">
       <h2 className="text-[28px] font-bold text-white">Skills</h2>
       <div className="flex justify-center items-center gap-7 flex-wrap text-center mt-8">
-        {skillsList.map((skill) => (
-          <div className="flex flex-col justify-center items-center">
+        {skillsList.map((skill, index) => (
+          <div
+            className="flex flex-col justify-center items-center"
+            key={index}
+          >
             <div
               key={skill.name}
               className="border-[1px] border-solid border-custom-brown rounded-[8px] p-2.5 bg-white"
