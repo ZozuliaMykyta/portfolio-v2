@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <div className="dark-bg pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-9">
+    <div className="dark-bg pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-8">
       <h2 className="text-white text-[28px] sm:text-[30px] md:text-[32px] 2xl:text-[28px] font-bold mb-2.5">
         About
       </h2>
@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
       <h3 className="mt-5 text-[24px] sm:text-[25px] md:text-[26px] 2xl:text-[24px] font-bold text-white">
         What I Do
       </h3>
-      <div className="mt-4 flex flex-col 2xl:flex-row items-center justify-between gap-4 sm:gap-5 2xl:gap-7">
+      <div className="mt-4 flex flex-col 2xl:flex-row items-center justify-between gap-4 sm:gap-5 2xl:gap-6">
         {whatIDo.map((item, index) => (
           <div
             key={index}
@@ -53,7 +53,7 @@ const AboutMe: React.FC = () => {
               <h4 className="mt-2 md:mt-4 text-white text-[18px] 2xl:text-[16px] font-family-inter font-bold">
                 {item.title}
               </h4>
-              <p className="text-[#D1D1CD] font-bold text-[15px] md:text-[22px] 2xl:text-[13px] mt-2 md:mt-3 leading-relaxed">
+              <p className="text-[#D1D1CD] font-bold text-[15px] md:text-[22px] 2xl:text-[12px] mt-2 md:mt-3 leading-relaxed">
                 {item.description}
               </p>
             </div>
