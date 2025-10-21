@@ -24,7 +24,7 @@ const ContactMe: React.FC = () => {
         className="flex flex-col justify-center items-center gap-5 mt-7 w-full min-w-0 sm:min-w-[350px] max-w-[600px] 2xl:min-w-[700px]"
       >
         <div className="w-full">
-          <h6 className="text-[18px] 2xl:text-[20px] text-white font-medium mb-1.5">
+          <h6 className="text-[16px] text-white font-medium mb-1.5">
             Email Address
           </h6>
           <input
@@ -37,13 +37,11 @@ const ContactMe: React.FC = () => {
             })}
           />
           {errors.email && (
-            <span className="text-red-500">{errors.email.message}</span>
+            <h6 className="input-error">{errors.email.message}</h6>
           )}
         </div>
         <div className="w-full">
-          <h6 className="text-[18px] 2xl:text-[20px] text-white font-medium mb-1.5">
-            Subject
-          </h6>
+          <h6 className="text-[16px] text-white font-medium mb-1.5">Subject</h6>
           <input
             type="text"
             className="contactInput text-white w-full"
@@ -54,15 +52,13 @@ const ContactMe: React.FC = () => {
             })}
           />
           {errors.subject && (
-            <span className="text-red-500">{errors.subject.message}</span>
+            <h6 className="input-error">{errors.subject.message}</h6>
           )}
         </div>
         <div className="w-full">
-          <h6 className="text-[18px] 2xl:text-[20px] text-white font-medium mb-1.5">
-            Message
-          </h6>
+          <h6 className="text-[16px] text-white font-medium mb-1.5">Message</h6>
           <textarea
-            className="contactInput resize-none w-full text-white h-[150px]"
+            className="contactInput resize-none w-full text-white h-[96px]"
             autoComplete="off"
             {...register("message", {
               required: "Message is required",
@@ -70,7 +66,7 @@ const ContactMe: React.FC = () => {
             })}
           ></textarea>
           {errors.message && (
-            <span className="text-red-500">{errors.message.message}</span>
+            <h6 className="input-error">{errors.message.message}</h6>
           )}
         </div>
         <button
