@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactMe: React.FC = () => {
   return (
-    <div className="dark-bg pt-5 pb-8 px-9">
+    <div className="dark-bg main-content">
       <h2 className="text-[28px] font-bold text-white">Contact Me</h2>
       <form
         action="#!"
@@ -18,11 +18,11 @@ const ContactMe: React.FC = () => {
           <h6 className="text-[20px] text-white font-medium mb-1.5">Subject</h6>
           <input type="text" name="subject" className="contactInput" />
         </div>
-        <div>
+        <div className="w-full">
           <h6 className="text-[20px] text-white font-medium mb-1.5">Message</h6>
           <textarea
             name="message"
-            className="contactInput resize-none"
+            className="contactInput resize-none w-full"
           ></textarea>
         </div>
         <button

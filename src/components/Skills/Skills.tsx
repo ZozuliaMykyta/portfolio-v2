@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
     { name: "GitHub", icon: github },
   ];
   return (
-    <div className="dark-bg pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-8">
+    <div className="dark-bg main-content">
       <h2 className="text-[28px] sm:text-[30px] md:text-[32px] 2xl:text-[28px] font-bold text-white">
         Skills
       </h2>

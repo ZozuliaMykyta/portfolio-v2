@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <div className="dark-bg pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-8">
+    <div className="dark-bg main-content">
       <h2 className="text-white text-[28px] sm:text-[30px] md:text-[32px] 2xl:text-[28px] font-bold mb-2.5">
         About
       </h2>
