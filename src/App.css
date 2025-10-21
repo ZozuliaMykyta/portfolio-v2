@@ -62,3 +62,7 @@ body {
 .main-content {
   @apply pt-5 pb-8 px-4 sm:px-6 md:px-8 2xl:px-8;
 }
+
+.input-error {
+  @apply text-red-500 mt-2 font-family-inter text-sm;
+}
