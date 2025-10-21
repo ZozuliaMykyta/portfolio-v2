@@ -21,7 +21,7 @@ const SectionNav: React.FC = () => {
   };
 
   return (
-    <div className="2xl:py-8 py-4 2xl:px-7 px-4 flex 2xl:flex-col flex-row 2xl:justify-between justify-center items-center 2xl:gap-6 gap-2 dark-bg 2xl:w-auto w-auto mx-auto flex-wrap">
+    <div className="2xl:py-8 py-4 2xl:px-7 px-4 flex 2xl:flex-col flex-row 2xl:justify-between justify-center items-center 2xl:gap-6 gap-2 dark-bg flex-wrap">
       {sections.map((section, index) => {
         const isActive = currentSection === section.label.toLowerCase();
 
