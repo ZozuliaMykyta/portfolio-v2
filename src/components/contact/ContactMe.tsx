@@ -1,13 +1,26 @@
 import React from "react";
+import { useForm, type SubmitHandler } from "react-hook-form";
+
+type Inputs = {
+  email: string;
+  subject: string;
+  message: string;
+};
 
 const ContactMe: React.FC = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   return (
     <div className="dark-bg main-content">
       <h2 className="text-[28px] 2xl:text-[28px] text-center 2xl:text-left font-bold text-white">
         Contact Me
       </h2>
       <form
-        action="#!"
+        onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col justify-center items-center gap-5 mt-7 w-full min-w-0 sm:min-w-[350px] max-w-[600px] 2xl:min-w-[700px]"
       >
         <div className="w-full">
@@ -16,10 +29,16 @@ const ContactMe: React.FC = () => {
           </h6>
           <input
             type="email"
-            name="email"
             className="contactInput text-white w-full"
             autoComplete="email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: /^[\w.-]+@[a-zA-Z\d.-]+.[a-zA-Z]{2,}$/,
+            })}
           />
+          {errors.email && (
+            <span className="text-red-500">{errors.email.message}</span>
+          )}
         </div>
         <div className="w-full">
           <h6 className="text-[18px] 2xl:text-[20px] text-white font-medium mb-1.5">
@@ -27,20 +46,32 @@ const ContactMe: React.FC = () => {
           </h6>
           <input
             type="text"
-            name="subject"
             className="contactInput text-white w-full"
             autoComplete="off"
+            {...register("subject", {
+              required: "Subject is required",
+              minLength: 3,
+            })}
           />
+          {errors.subject && (
+            <span className="text-red-500">{errors.subject.message}</span>
+          )}
         </div>
         <div className="w-full">
           <h6 className="text-[18px] 2xl:text-[20px] text-white font-medium mb-1.5">
             Message
           </h6>
           <textarea
-            name="message"
             className="contactInput resize-none w-full text-white h-[150px]"
             autoComplete="off"
+            {...register("message", {
+              required: "Message is required",
+              minLength: 10,
+            })}
           ></textarea>
+          {errors.message && (
+            <span className="text-red-500">{errors.message.message}</span>
+          )}
         </div>
         <button
           type="submit"
