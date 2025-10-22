@@ -8,7 +8,6 @@ import Info from "./components/Info";
 import SectionNav from "./components/Navigation/SectionNav";
 import ProjectsList from "./components/Projects/ProjectsList";
 import Skills from "./components/Skills/Skills";
-import ContactMe from "./components/contact/ContactMe";
 
 function App() {
   const { currentSection } = useSectionContext();
@@ -49,9 +48,6 @@ function App() {
           </Activity>
           <Activity mode={currentSection === "skills" ? "visible" : "hidden"}>
             <Skills />
-          </Activity>
-          <Activity mode={currentSection === "contact" ? "visible" : "hidden"}>
-            <ContactMe />
           </Activity>
         </main>
         <Activity mode={isWide ? "visible" : "hidden"}>

@@ -2,7 +2,6 @@ import React from "react";
 import { IoPerson } from "react-icons/io5";
 import { CiMug1 } from "react-icons/ci";
 import { FaLaptopCode, FaCode } from "react-icons/fa6";
-import { RiContactsBook3Line } from "react-icons/ri";
 import { useSectionContext } from "../contexts/SectionContext";
 
 const SectionNav: React.FC = () => {
@@ -13,7 +12,6 @@ const SectionNav: React.FC = () => {
     { label: "Experience", icon: <CiMug1 /> },
     { label: "Skills", icon: <FaLaptopCode /> },
     { label: "Projects", icon: <FaCode /> },
-    { label: "Contact", icon: <RiContactsBook3Line /> },
   ];
 
   const handleSectionClick = (label: string) => {
