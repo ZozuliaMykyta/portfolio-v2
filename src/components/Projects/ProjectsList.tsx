@@ -2,6 +2,7 @@ import React from "react";
 import shopCo from "../../assets/img/projects/shop.co.jpg";
 import weatherApp from "../../assets/img/projects/weather-app.jpg";
 import podOfCast from "../../assets/img/projects/podofcast.jpg";
+import eatly from "../../assets/img/projects/eatly.jpg";
 
 const ProjectsList: React.FC = () => {
   const projectsImages = [
@@ -11,7 +12,7 @@ const ProjectsList: React.FC = () => {
       description: "Shop.co — MERN stack",
     },
     {
-      src: shopCo,
+      src: eatly,
       alt: "Eatly project screenshot",
       description: "Eatly — MERN stack",
     },
@@ -32,7 +33,7 @@ const ProjectsList: React.FC = () => {
       <h2 className="text-white text-[28px] sm:text-[30px] md:text-[32px] 2xl:text-[28px] font-bold">
         Projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 gap-x-4 sm:gap-x-6 md:gap-x-8 2xl:gap-x-10 gap-y-3 sm:gap-y-4 md:gap-y-5 mt-4 sm:mt-5 md:mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 gap-x-4 sm:gap-x-6 md:gap-x-8 2xl:gap-x-10 gap-y-3 sm:gap-y-4 md:gap-y-5 mt-4 sm:mt-5 md:mt-6">
         {projectsImages.map((project, index) => (
           <div
             key={index}
