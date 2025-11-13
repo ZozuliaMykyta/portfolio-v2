@@ -10,21 +10,25 @@ const ProjectsList: React.FC = () => {
       src: shopCo,
       alt: "shop.co project screenshot",
       description: "Shop.co — MERN stack",
+      link: "https://shop-co-frontend.onrender.com/",
     },
     {
       src: eatly,
       alt: "Eatly project screenshot",
       description: "Eatly — MERN stack",
+      link: "https://eatly-frontend-5lw5.onrender.com/",
     },
     {
       src: weatherApp,
       alt: "Weather App project screenshot",
       description: "Weather App — React + TypeScript",
+      link: "https://zozuliamykyta.github.io/weather-app/",
     },
     {
       src: podOfCast,
       alt: "PodOfCast project screenshot",
       description: "Podofcast — React",
+      link: "https://zozuliamykyta.github.io/podofcast/",
     },
   ];
 
@@ -35,8 +39,10 @@ const ProjectsList: React.FC = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 gap-x-4 sm:gap-x-6 md:gap-x-8 2xl:gap-x-10 gap-y-3 sm:gap-y-4 md:gap-y-5 mt-4 sm:mt-5 md:mt-6">
         {projectsImages.map((project, index) => (
-          <div
+          <a
             key={index}
+            href={project.link}
+            target="_blank"
             className="border-[1.5px] border-solid border-custom-brown p-2.5 sm:p-2.5 md:p-3 2xl:p-3.5 bg-[#403D32] rounded-[9px]"
           >
             <img
@@ -47,7 +53,7 @@ const ProjectsList: React.FC = () => {
             <p className="text-white mt-2 font-bold text-[15px] md:text-[15.5px]">
               {project.description}
             </p>
-          </div>
+          </a>
         ))}
       </div>
     </div>
