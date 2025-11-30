@@ -36,6 +36,7 @@ const Info: React.FC = () => {
       <img
         src={personalPhoto}
         alt="personal photo"
+        fetchPriority="high"
         className="w-[160px] h-[160px] sm:w-[190px] sm:h-[190px] border-[4px] sm:border-[5px] border-solid border-custom-brown rounded-xl mt-[-80px] sm:mt-[-95px]"
       />
       <h2 className="mt-2.5 text-[22px] sm:text-[26px] font-bold">
