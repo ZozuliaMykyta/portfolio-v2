@@ -1,5 +1,5 @@
 import React from "react";
-import personalPhoto from "../assets/img/avatar-02-compressed.jpg";
+import personalPhoto from "../assets/img/avatar-02-compressed.webp";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
