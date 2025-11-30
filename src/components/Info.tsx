@@ -8,16 +8,19 @@ const Info: React.FC = () => {
   const socialIcons = [
     {
       component: <FaInstagram />,
+      label: "Instagram",
       link: "https://www.instagram.com/mykyta635/",
       color: "rgba(231,121,117,1)",
     },
     {
       component: <FaLinkedin />,
+      label: "LinkedIn",
       link: "https://www.linkedin.com/in/mykyta-zozulia-89ba76308/",
       color: "rgba(54,98,227,1)",
     },
     {
       component: <FaGithub />,
+      label: "GitHub",
       link: "https://github.com/ZozuliaMykyta",
       color: "rgba(204,192,192,1)",
     },
@@ -48,6 +51,7 @@ const Info: React.FC = () => {
             key={index}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={icon.label}
             className="text-[20px] sm:text-[24px] border-[1px] border-solid p-1 sm:p-1.5 rounded-[5px] 
                        transition-all duration-300 ease-in-out
                        hover:scale-110 hover:-translate-y-1
@@ -60,20 +64,20 @@ const Info: React.FC = () => {
       </div>
       <div className="mt-8 sm:mt-10 p-4 sm:p-5 rounded-xl bg-[#3B3729]">
         <ul className="text-[11px] sm:text-[13px] font-medium flex flex-col justify-center items-start gap-4 sm:gap-5">
-          <div className="flex justify-between items-center gap-3 sm:gap-4 border-b border-b-[rgba(0,0,0,0.10)] pb-4 sm:pb-5">
+          <li className="flex justify-between items-center gap-3 sm:gap-4 border-b border-b-[rgba(0,0,0,0.10)] pb-4 sm:pb-5">
             <div className="p-1.5 sm:p-2 bg-black rounded-[4px]">
               <MdEmail className="text-[16px] sm:text-[20px]" />
             </div>
-            <li className="break-words text-[10px] sm:text-[13px]">
+            <span className="break-words text-[10px] sm:text-[13px]">
               {data.gmail}
-            </li>
-          </div>
-          <div className="flex justify-between items-center gap-4 sm:gap-6">
+            </span>
+          </li>
+          <li className="flex justify-between items-center gap-4 sm:gap-6">
             <div className="p-1.5 sm:p-2 bg-black rounded-[4px]">
               <FaLocationDot className="text-[16px] sm:text-[20px]" />
             </div>
-            <li className="text-[11px] sm:text-[13px]">{data.location}</li>
-          </div>
+            <span className="text-[11px] sm:text-[13px]">{data.location}</span>
+          </li>
         </ul>
       </div>
     </div>
