@@ -1,17 +1,11 @@
 import React from "react";
 import personalPhoto from "../assets/img/avatar-02-compressed.webp";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
 const Info: React.FC = () => {
   const socialIcons = [
-    {
-      component: <FaInstagram />,
-      label: "Instagram",
-      link: "https://www.instagram.com/mykyta635/",
-      color: "rgba(231,121,117,1)",
-    },
     {
       component: <FaLinkedin />,
       label: "LinkedIn",
