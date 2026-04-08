@@ -47,7 +47,7 @@ const AboutMe: React.FC = () => {
             <img
               src={item.img}
               alt={item.title}
-              className="w-full md:w-32 lg:w-36 2xl:w-auto h-32 md:h-auto object-cover md:object-contain rounded-md md:rounded-none flex-shrink-0"
+              className="hidden md:block w-full md:w-32 lg:w-36 2xl:w-auto h-32 md:h-auto object-cover md:object-contain rounded-md md:rounded-none flex-shrink-0"
             />
             <div className="pb-1.5 w-full">
               <h4 className="mt-2 md:mt-4 text-white text-[18px] 2xl:text-[16px] font-family-inter font-bold">
